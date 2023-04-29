@@ -1,27 +1,39 @@
 import { TextInput, Pressable, Text, View, StyleSheet } from 'react-native';
 
-export default function LoginForm() {
+export default function LoginForm(props) {
   return (
     <View style={styles.container}>
+      <View>
       <Text style={styles.bienvenido}>BIENVENIDO</Text>
       <Text>Ingresa estos datos para iniciar</Text>
       <TextInput style={styles.input} placeholder='Correo Electronico' />
       <TextInput style={styles.input} placeholder='Contraseña' />
-      <Text style={styles.olvidasteContras}>¿Olvidaste tu contraseña?</Text>
+      <Text style={styles.olvidasteContras} onPress={() =>props.navigation.navigate('Saludar')}>¿Olvidaste tu contraseña?</Text>
       <View style={styles.botones}>
-        <Pressable style={styles.comenzar} onPress={() => console.log("Enviado")}>
+        <Pressable style={styles.comenzar} onPress={() => console.log("COMENZAR")}>
           <Text style={styles.textoComenzar} >COMENZAR</Text>
         </Pressable>
 
-        <Pressable style={styles.registrarse} onPress={() => console.log("Enviado")}>
+        <Pressable style={styles.registrarse} onPress={() => console.log("REGISTRARSE")}>
           <Text style={styles.textoRegistrarse} >REGISTRARSE</Text>
         </Pressable>
+      </View>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 300,
+    height: 300,
+    marginHorizontal: "auto"
+  },
   bienvenido: {
     color: '#4c9c6a',
     fontSize: 30,
@@ -32,9 +44,6 @@ const styles = StyleSheet.create({
     paddingLeft: 7,
     borderBottomWidth: 1,
     borderBottomColor: '#333',
-  },
-  container: {
-    width: 300
   },
   olvidasteContras: {
     marginTop: 10
