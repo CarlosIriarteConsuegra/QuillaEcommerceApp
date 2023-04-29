@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import LoginForm from './src/componentes/LoginForm';
+import Saludar from './src/componentes/Saludar';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Bienvenidos a la primera vista de QuillaEcommerce con React Native</Text>
-      <StatusBar style="auto" />
+      <Saludar />
+      <LoginForm />
     </View>
   );
 }
