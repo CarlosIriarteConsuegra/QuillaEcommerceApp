@@ -1,36 +1,4 @@
 {
-  "expo": {
-    "name": "QuillaEcommerce",
-    "slug": "QuillaEcommerce",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
-      },
-      "package": "com.carlosiriarte.QuillaEcommerce"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "1d3b2e6d-65ea-4f52-ac4f-38cef89e66c6"
-      }
-    }
-  }
+  "name": "rn_example_menu_drawer_nested",
+  "displayName": "rn_example_menu_drawer_nested"
 }
